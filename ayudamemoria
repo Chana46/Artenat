@@ -1,7 +1,26 @@
+28092023
 git init
 git config --global user.name
 git config --global user.email
 git config --global -e
 
 git add. (va a pasar todos los archivos al area de ensayo)
-git status (veo el estado de los archivos)
+git status .  (veo el estado de los archivos)
+
+git commit -m "primer copia v1.0"  (crea una copia y pasa los archivos al repositorio local)
+
+git branch -M main  (cree la rama main)
+git remote add origin https://github.com/Chana46/Artenat.git  (relacione mi git con github)
+git push -u origin main   (subir los archivos del repo local a git push -u origin maingithub)
+
+hago cambios en el proyecto y para hacer una nueva copia:
+git add .
+git commit -m "segunda copia v1.1" 
+git push
+
+
+crear una rama: git branch nombreBranch
+hay que hacer un git pull antes de unir la info cambiada
+unir la rama a Master git merge nombreBranch
+mostrar en que rama nos encontramos: git branch
+cambiar a una rama determinada_ git checkout nombreBranch
