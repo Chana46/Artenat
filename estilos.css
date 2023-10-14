@@ -74,7 +74,17 @@ main {
 footer {
     background-color: #eceff2;
 }
+.container_footer{
+    display: flex;
+}
+.container_contact_info{
+    padding-left: 10%;
 
+}
+.contact_info{
+    display: flex;
+    flex-direction: column;
+}
 .mapa{
     width: 300px;
     height:300px; 

@@ -14,7 +14,7 @@
     <nav id="navegacion">
       <ul id="menu">
           <li><a href="">Naty</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="#contact_info">Contacto</a></li>
           <li><a>Catalogo</a>
               <ul id="submenu">
                   <li><a href="">Animales</a></li>
@@ -39,20 +39,45 @@
     <!-- Contenido principal de la página -->
   </main>
   <footer>
-    <a class="mapa" href="https://maps.app.goo.gl/bG6yP7KkWqxeYQfY7">Sucursal Villa Pueyrredon</a>
-    <br>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6746376620345!2d-58.50403482524776!3d-34.587098356618824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb649351358d9%3A0x5fdc1471f0711baa!2sAvenida%20Nazca%20%26%20Gabriela%20Mistral%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696295080955!5m2!1ses-419!2sar"
-      width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <div>
-    <a href="#"><img src="./Imagenes/instagram.png" width="25"></a>
-    <a href="#"><img src="./Imagenes/facebook.png" width="25"></a>
-    <a href="#"><img src="./Imagenes/whatsapp.png" width="25"></a>
-  </div>
-    <br>
-    <br>
-  </footer>
+    <div class="container_footer">
+      <div class="container_map">
+        <a class="mapa" href="https://maps.app.goo.gl/bG6yP7KkWqxeYQfY7">Sucursal Villa Pueyrredon</a>
+        <br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6746376620345!2d-58.50403482524776!3d-34.587098356618824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb649351358d9%3A0x5fdc1471f0711baa!2sAvenida%20Nazca%20%26%20Gabriela%20Mistral%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696295080955!5m2!1ses-419!2sar"
+          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div>
+          <a href="#"><img src="./Imagenes/instagram.png" width="25"></a>
+          <a href="#"><img src="./Imagenes/facebook.png" width="25"></a>
+          <a href="#"><img src="./Imagenes/whatsapp.png" width="25"></a>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="container_contact_info"> 
+        <!-- Formulario para la info de contacto para que funcione colocar su propio email -->
+        <form id="contact_info" class="contact_info" action="https://formsubmit.co/your@email.com" method="POST">
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name">
+
+          <label for="email">Correo electronico:</label>
+          <input type="email" name="email" id="email">
+
+          <label for="subject">Asunto:</label>
+          <input type="text" name="subject" id="subject">
+
+          <label for="comments">Comentarios:</label>
+          <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+          <input class="btn" type="submit" value="Enviar">
+        </form>
+
+      </div>
+    </footer>
+    </div>
+
+
 </body>
 </html>
