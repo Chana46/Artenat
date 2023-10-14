@@ -1,60 +1,82 @@
 /* Estilos CSS en un archivo externo */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #fff;
-    padding: 10px;
     text-align: center;
 }
-nav {
-    background-color: #f8f9fa;
-    padding: 10px;
+
+#navegacion{
+    background-color: #eceff2;
 }
-nav ul {
+
+#navegacion ul{
     list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
 }
-nav li {
-    margin: 0 20px;
-}
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-main {
-    padding: 20px;
-}
-footer {
-    background-color: #f8f9fa;
-    
-    padding: 10px;
-}
-.dropdown {
+
+#menu > li{
     position: relative;
     display: inline-block;
+    width: 200px;
+    text-align: center;
 }
-.dropdown-content {
-    display: none;
+
+#menu > li > a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover{
+    background-color: #b0b9c2;
+}
+
+#submenu{
     position: absolute;
-    background-color: #f8f9fa;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    background-color: #eceff2;
+    display: none;
 }
-.dropdown:hover .dropdown-content {
+
+#submenu li{
+    width: 200px;
+}
+
+#submenu li a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#menu li:hover #submenu{
     display: block;
 }
-  
+
+main {
+    height: 500px;
+}
+
+footer {
+    background-color: #eceff2;
+}
 
 .mapa{
     width: 300px;
     height:300px; 
     border:0; 
 }
-
