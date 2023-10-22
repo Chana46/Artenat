@@ -81,7 +81,7 @@ footer {
     padding-left: 10%;
 
 }
-.contact_info{
+#contact_info{
     display: flex;
     flex-direction: column;
 }
