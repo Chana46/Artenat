@@ -68,7 +68,7 @@ a:hover{
 }
 
 main {
-    height: 500px;
+   min-height: 50%;
 }
 
 footer {
