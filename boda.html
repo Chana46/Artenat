@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/Accesorios.css">
+    <title>Accesorios</title>
+</head>
+    <body>
+        <header>
+            <a href="/index.html"><img src="./Imagenes/Logo ArteNat.png" width="350"></a>
+            <br><br>
+            <nav id="navegacion">
+            <ul id="menu">
+                <li><a href="./index.html">Naty</a></li>
+                <li><a href="#contact_info">Contacto</a></li>
+                <li><a>Catalogo</a>
+                    <ul id="submenu">
+                        <li><a href="/Accesorios.html">Accesorios</a></li>
+                        <li><a href="/Animales.html">Animales</a></li>
+                        <li><a href="/boda.html">Boda</a></li>
+                        <li><a href="/baby.html">Linea Baby</a></li>
+                        <li><a href="/sirenas.html">Sirenas</a></li>
+                        <li><a href="/souvenir.html">Souvenirs</a></li>
+                    </ul>
+                </li>
+                <li><a href="/preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Registrarse.html">Login</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contenido">
+                <div class="mostrador" id="mostrador">
+                    <div class="fila">
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="./Imagenes/Boda/boda-1.jpg" alt="">
+                                <p class="descripcion">Boda-1</p>
+                                <span class="precio">$1.000</span>
+                            </div>
+                        </div>
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="./Imagenes/Boda/boda-2.jpg" alt="">
+                                <p class="descripcion">Boda-2</p>
+                                <span class="precio">$1.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CONTENEDOR DEL ITEM SELECCIONADO-->
+
+                <div class="seleccion" id="seleccion">
+                    <div class="cerrar" onclick="cerrar()">
+                        &#x2715
+                    </div>
+                    <div class="info">
+                        <img src="./Imagenes/Accesorios/acc-1.jpg" alt="" id="img">
+                        <h2 id="modelo">Accesorio Nro 1</h2>
+                        <p id="descripcion">Descripcion del Accesorio Nro 1</p>
+
+                        <span class="precio" id="precio">$1.000</span>
+
+                        <div class="fila">
+                            <div class="size">
+                                <label for="">Cantidad</label>
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                            <button>AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="./Scripts/Accesorios.js"></script>
+        </main>
+        <footer>
+            <div class="container_footer">
+              <div class="container_map">
+                <a class="mapa" href="https://maps.app.goo.gl/bG6yP7KkWqxeYQfY7">Sucursal Villa Pueyrredon</a>
+                <br>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6746376620345!2d-58.50403482524776!3d-34.587098356618824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb649351358d9%3A0x5fdc1471f0711baa!2sAvenida%20Nazca%20%26%20Gabriela%20Mistral%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696295080955!5m2!1ses-419!2sar"
+                  width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div>
+                  <a href="#"><img src="./Imagenes/instagram.png" width="25"></a>
+                  <a href="#"><img src="./Imagenes/facebook.png" width="25"></a>
+                  <a href="#"><img src="./Imagenes/whatsapp.png" width="25"></a>
+                </div>
+                <br>
+                <br>
+              </div>
+              <div class="container_contact_info"> 
+                <!-- Formulario para la info de contacto para que funcione colocar su propio email -->
+                <form id="contact_info" action="https://formsubmit.co/your@email.com" method="POST">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name">
+        
+                  <label for="email">Correo electronico:</label>
+                  <input type="email" name="email" id="email">
+        
+                  <label for="subject">Asunto:</label>
+                  <input type="text" name="subject" id="subject">
+        
+                  <label for="comments">Comentarios:</label>
+                  <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        
+                  <input class="btn" type="submit" value="Enviar">
+                </form>
+        
+              </div>
+            </div>
+        </footer>
+    </body>
+</html>

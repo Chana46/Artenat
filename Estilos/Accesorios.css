@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Estilos para el catalogo*/
+
+.contenido{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+    /*border: 1px solid black;*/
+}
+
+.mostrador .fila .item:hover{
+    background-color: #c4bdbd;
+}
+
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.info{
+    padding: 20px;
+}
+
+.info img{
+    display: block;
+    margin: 30px;
+    width: 80%;
+}
+
+.info h2{
+    color: #707070;
+    margin-bottom: 10px;
+}
+
+.info p{
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+
+.info .precio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f85151;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+
+.info .fila label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info .fila select{
+    width: 100px;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 30px;
+}
+
+.info .fila button{
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #f85151;
+}
+
+/* Estilos CSS para la barra del heat y del footer */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#main-animales{
+    height: 3350px;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+}
+
+#navegacion{
+    background-color: #eceff2;
+}
+
+#navegacion ul{
+    list-style: none;
+}
+
+#menu > li{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+#menu > li > a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover{
+    background-color: #b0b9c2;
+}
+
+#submenu{
+    position: absolute;
+    background-color: #eceff2;
+    display: none;
+}
+
+#submenu li{
+    width: 200px;
+}
+
+#submenu li a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#menu li:hover #submenu{
+    display: block;
+}
+
+main {
+   min-height: 50%;
+}
+
+footer {
+    background-color: #eceff2;
+}
+.container_footer{
+    display: flex;
+}
+.container_contact_info{
+    padding-left: 10%;
+
+}
+#contact_info{
+    display: flex;
+    flex-direction: column;
+}
+.mapa{
+    width: 300px;
+    height:300px; 
+    border:0; 
+}
