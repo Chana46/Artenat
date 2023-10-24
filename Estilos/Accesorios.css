@@ -21,7 +21,7 @@
 
 .mostrador .fila{
     display: flex;
-    justify-content: space-between;
+    justify-content:left ;
     margin-bottom: 40px;
 }
 
@@ -65,7 +65,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     overflow: hidden;
 }
 
@@ -107,7 +107,7 @@
 
 .info .fila{
     display: flex;
-    align-items: flex-end;
+    align-items:flex-end;
 }
 
 .info .fila label{
