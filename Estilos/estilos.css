@@ -78,15 +78,24 @@ footer {
     display: flex;
 }
 .container_contact_info{
-    padding-left: 10%;
+    padding-left: 20%;
+    width: 15%;
+    height: 50%;
 
 }
 #contact_info{
     display: flex;
     flex-direction: column;
 }
+.container_map{
+    width: 10%;
+    height:10%; 
+    padding-left: 2%;
+    padding-right: 2%;
+}
 .mapa{
-    width: 300px;
-    height:300px; 
+    width: 10%;
+    height:10%; 
     border:0; 
+    padding-left: 5%;
 }

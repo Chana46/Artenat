@@ -14,8 +14,8 @@
 .wrapper{
   
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 125%;
+    height: 50%;
     border: 2px solid black;
     border-radius: 20px;
     display: flex;
